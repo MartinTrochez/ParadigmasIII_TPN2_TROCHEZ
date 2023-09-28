@@ -33,7 +33,3 @@ let rotadores = document.getElementsByClassName("slider-wrapper")
 let rotadorImagen = rotadores[0]
 let rotadorOfertas = rotadores[1]
 
-rotadorImagen.onmouseover = () => { clearInterval(comenzarImagen) }
-rotadorImagen.onmouseout = () => { comenzarImagen() }
-rotadorOfertas.onmouseover = () => { clearInterval(comenzarOfertas) }
-rotadorOfertas.onmouseout = () => { comenzarOfertas() }
