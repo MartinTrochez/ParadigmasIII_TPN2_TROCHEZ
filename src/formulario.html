@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <script src="./scripts/menuMobil.js" defer></script>
+  <title>Trabajo Practico N2</title>
+</head>
+
+<body class="bg-background z-0 m-0 p-0 font-sans w-full">
+  <header class="bg-color1 w-full m-0">
+    <h1 class="m-0 place-content-center w-full flex">
+      <img class="m-0 inline-block self-center" src="./imagenes/logo.png" width="140" alt="e-commerce" />
+    </h1>
+    <nav
+      class="pt-0 pb-1 mt-0 w-full bg-color1 items-center inline-flex justify-between shadow-[0_-12px_-15px_21px_#832424] h-1/6 flex-wrap">
+      <div>
+        <div class="block md:hidden mr-auto ml-3 my-auto cursor-pointer">
+          <div id="menu-mobil" class="group peer">
+            <div
+              class="top-0 group-open:rotate-45 group-open:top-2 relative transition-all bg-color6 rounded-full w-8 h-1">
+            </div>
+            <div class="opacity-100 group-open:opacity-0 transition-all bg-color6 rounded-full w-8 h-1 mt-1"></div>
+            <div
+              class="top-0 group-open:-rotate-45 group-open:-top-2 relative transition-all bg-color6 rounded-full w-8 h-1 mt-1">
+            </div>
+          </div>
+          <div class="absolute hidden peer-open:block top-[5.3rem] w-full bg-color1 right-0">
+            <div class="relative flex h-full cursor-pointer items-center">
+              <a class="mx-auto my-auto text-color6 hover:text-color3 active:text-color7 active:font-bold"
+                href="index.html">Inicio</a>
+            </div>
+            <div class="relative flex h-full cursor-pointer items-center">
+              <a class="mx-auto my-auto text-color6 hover:text-color3 active:text-color7 active:font-bold"
+                href="listado_producto_tabla.html">Listado Productos Tabla</a>
+            </div>
+            <div class="relative flex h-full cursor-pointer items-center">
+              <a class="mx-auto my-auto text-color6 hover:text-color3 active:text-color7 active:font-bold"
+                href="listado_producto_box.html">Listado Productos Box</a>
+            </div>
+          </div>
+        </div>
+        <ul class="md:inline-flex hidden list-none justify-evenly">
+          <li class="pr-3 ml-2 border-r-2 border-solid border-color6">
+            <a class="text-color6 hover:text-color3 active:text-color7 active:font-bold" href="index.html">Inicio</a>
+          </li>
+          <li class="pr-3 ml-3 border-r-2 border-solid border-color6">
+            <a class="text-color6 hover:text-color3 active:text-color7 active:font-bold"
+              href="listado_producto_tabla.html">Listado Producto
+              Tabla</a>
+          </li>
+          <li class="ml-3">
+            <a class="text-color6 hover:text-color3 active:text-color7 active:font-bold"
+              href="listado_producto_box.html">Listado Producto Box</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mr-1">
+        <ul class="list-none inline-flex">
+          <li class="pr-3 border-r-2 border-solid border-color6">
+            <a class="text-color6 hover:text-color3 active:text-color7 active:font-bold" href="formulario.html"><span
+                class="material-symbols-outlined"> shopping_cart </span></a>
+          </li>
+          <li class="ml-3 mr-2">
+            <a class="text-color6 hover:text-color3 active:text-color7 active:font-bold" href="#"><span
+                class="material-symbols-outlined">
+                account_circle
+              </span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="flex items-center justify-center m-0 p-3 min-h-screen">
+    <section class="main-section flex justify-center">
+      <div>
+        <form class="formulario-compra w-full text-center">
+          <h2 class="text-3xl font-semibold mb-8">Ingrese sus datos</h2>
+          <div class="flex flex-col items-center">
+            <label for="nombre" class="text-lg">Nombre/s:</label>
+            <input class="input w-full p-3 m-2 border border-gray-300 rounded-md text-center" type="text" name="nombre"
+              value="" required>
+            <label for="apellido" class="text-lg">Apellido/s:</label>
+            <input class="input w-full p-3 m-2 border border-gray-300 rounded-md text-center" type="text"
+              name="apellido" value="" required>
+          </div>
+          <div class="flex flex-col items-center">
+            <label for="direccion" class="text-lg">Dirección</label>
+            <input class="input w-full p-3 m-2 border border-gray-300 rounded-md text-center" type="text"
+              name="direccion" value="" required>
+          </div>
+          <div class="flex flex-col items-center">
+            <label for="telefono" class="text-lg">Teléfono</label>
+            <input class="input w-full p-3 m-2 border border-gray-300 rounded-md text-center" type="tel" name="telefono"
+              value="" required>
+          </div>
+          <div class="contenedor-medio-de-pago-flex flex flex-row flex-wrap">
+            <div class="tipo-tarjeta w-1/2">
+              <label for="medio_pago" class="text-lg">Medio de pago</label>
+              <select name="Medio de Pago" required
+                class="w-full p-3 m-2 border border-gray-300 rounded-md text-center">
+                <option value="" selected>Selecione un metodo de pago</option>
+                <option value="">Debito</option>
+                <option value="">Credito Visa</option>
+                <option value="">Credito Mastecard</option>
+              </select>
+            </div>
+            <div class="datos-tarjeta w-1/2">
+              <label for="" class="text-lg">Numero de la Tarjeta</label>
+              <input type="" name="" value="" required
+                class="w-full p-3 m-2 border border-gray-300 rounded-md text-center">
+            </div>
+          </div>
+          <div class="producto-formulario-flex flex flex-row flex-wrap">
+            <div class="contenedor-producto w-1/2">
+              <label for="" class="text-lg">Productos</label>
+              <select class="w-full p-3 m-2 border border-gray-300 rounded-md text-center" name="" required class="">
+                <option value="" selected>Selecione el procuto a pagar</option>
+                <option value="">producto1</option>
+                <option value="">producto1</option>
+                <option value="">producto1</option>
+                <option value="">producto1</option>
+                <option value="">producto1</option>
+              </select>
+            </div>
+            <div class="contenedor-cantidad-producto w-1/2">
+              <label for="" class="text-lg">Cantidad</label>
+              <input type="" name="" value="" required
+                class="w-full p-3 m-2 border border-gray-300 rounded-md text-center">
+            </div>
+          </div>
+          <input type="submit" name="" value="Comprar"
+            class=" hover:bg-color1 bg-color4 text-lg text-white text-color7 font-bold border-none w-1/2 rounded">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="w-full bg-color1 inline-flex align-bottom">
+    <small class="mx-auto my-auto text-color7 font-semibold">
+      2023 - E-Commerce - Codigo Fuente:
+      <a class="text-color6 hover:text-color3 active:text-color7 active:font-bold" href="#"><i
+          class="fa">&#xf09b;</i></a>
+    </small>
+  </footer>
+</body>
+
+</html>
