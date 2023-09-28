@@ -1,11 +1,11 @@
 let sliderIndex = [1, 1]
-let sliderId = ["slider-imagenes", "slider-ofertas"]
+let sliderClass = ["slider-imagenes", "slider-ofertas"]
 mostrarSlide(1, 0);
 mostrarSlide(1, 1);
 
 
 function mostrarSlide(n, no) {
-	let x = document.getElementsByClassName(sliderId[no]);
+	let x = document.getElementsByClassName(sliderClass[no]);
 	if (n > x.length) { sliderIndex[no] = 1 }
 	if (n < 1) { sliderIndex[no] = x.length }
 	for (let i = 0; i < x.length; i++) {
@@ -18,5 +18,22 @@ function cambiarSlide(n, no) {
 	mostrarSlide(sliderIndex[no] += n, no);
 }
 
-setInterval(cambiarSlide, 2000, 1, 0);
-setInterval(cambiarSlide, 2000, 1, 1);
+const comenzarImagen = function() {
+	setInterval(cambiarSlide, 2000, 1, 0);
+}
+
+const comenzarOfertas = function() {
+	setInterval(cambiarSlide, 2000, 1, 1);
+}
+
+comenzarImagen();
+comenzarOfertas();
+
+let rotadores = document.getElementsByClassName("slider-wrapper")
+let rotadorImagen = rotadores[0]
+let rotadorOfertas = rotadores[1]
+
+rotadorImagen.onmouseover = () => { clearInterval(comenzarImagen) }
+rotadorImagen.onmouseout = () => { comenzarImagen() }
+rotadorOfertas.onmouseover = () => { clearInterval(comenzarOfertas) }
+rotadorOfertas.onmouseout = () => { comenzarOfertas() }

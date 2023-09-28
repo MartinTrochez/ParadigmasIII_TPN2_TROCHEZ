@@ -84,9 +84,9 @@
   </header>
   <main class="mt-3 mb-3 min-h-screen">
     <section class="flex flex-wrap justify-around items-center">
-      <div class="basis-1/4" id="carousel-imagenes">
+      <div onmouseout="comenzarImagen()" onmouseover="clearInterval(comenzarImagen)" class="basis-1/4" id="carousel-imagenes">
         <h3 class="text-color7 bg-color4 font-bold text-center">Imagenes Guitarras</h3>
-        <div class="flex justify-center">
+        <div  class="flex justify-center">
           <div class="slider-wrapper mx-auto relative">
             <div class="slider-imagenes flex justify-center items-center">
               <img class=" bg-color5" src="imagenes/guitar-icon-13.jpg" alt="">
@@ -105,7 +105,8 @@
         </div>
         <div class="basis-1/4 mt-4 w-full" id="carousel-imagenes">
           <h3 class="text-color7 bg-color4 font-bold text-center">Ofertas</h3>
-          <div class="flex justify-center w-full">
+          <div onmouseover="clearInterval(comenzarOfertas)" onmouseout="comenzarOfertas()"
+            class="flex justify-center w-full">
             <div class="slider-wrapper mx-auto relative w-fit">
               <div class="slider-ofertas flex justify-center items-center w-fit bg-color5">
                 <div class="block items-center font-bold">

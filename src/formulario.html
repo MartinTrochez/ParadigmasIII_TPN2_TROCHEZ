@@ -104,36 +104,36 @@
             <input class="input w-full p-3 m-2 border border-gray-300 rounded-md text-center" type="tel" name="telefono"
               value="" required>
           </div>
-          <div class="contenedor-medio-de-pago-flex flex flex-row flex-wrap">
-            <div class="tipo-tarjeta w-1/2">
+          <div class="contenedor-medio-de-pago-flex flex sm:flex-row flex-wrap flex-column">
+            <div class="tipo-tarjeta sm:w-1/2 w-full">
               <label for="medio_pago" class="text-lg">Medio de pago</label>
               <select name="Medio de Pago" required
                 class="w-full p-3 m-2 border border-gray-300 rounded-md text-center">
-                <option value="" selected>Selecione un metodo de pago</option>
-                <option value="">Debito</option>
-                <option value="">Credito Visa</option>
-                <option value="">Credito Mastecard</option>
+                <option value="">Selecione un metodo de pago</option>
+                <option value="Debito">Debito</option>
+                <option value="Visa">Credito Visa</option>
+                <option value="Mastercard">Credito Mastecard</option>
               </select>
             </div>
-            <div class="datos-tarjeta w-1/2">
+            <div class="datos-tarjeta sm:w-1/2 w-full">
               <label for="" class="text-lg">Numero de la Tarjeta</label>
               <input type="" name="" value="" required
                 class="w-full p-3 m-2 border border-gray-300 rounded-md text-center">
             </div>
           </div>
-          <div class="producto-formulario-flex flex flex-row flex-wrap">
-            <div class="contenedor-producto w-1/2">
+          <div class="producto-formulario-flex flex sm:flex-row flex-wrap flex-row">
+            <div class="contenedor-producto sm:w-1/2 w-full">
               <label for="" class="text-lg">Productos</label>
               <select class="w-full p-3 m-2 border border-gray-300 rounded-md text-center" name="" required class="">
-                <option value="" selected>Selecione el procuto a pagar</option>
-                <option value="">producto1</option>
-                <option value="">producto1</option>
-                <option value="">producto1</option>
-                <option value="">producto1</option>
-                <option value="">producto1</option>
+                <option value="">Selecione el procuto a pagar</option>
+                <option value="producto1">producto1</option>
+                <option value="producto1">producto1</option>
+                <option value="producto1">producto1</option>
+                <option value="producto1">producto1</option>
+                <option value="producto1">producto1</option>
               </select>
             </div>
-            <div class="contenedor-cantidad-producto w-1/2">
+            <div class="contenedor-cantidad-producto sm:w-1/2 w-full">
               <label for="" class="text-lg">Cantidad</label>
               <input type="" name="" value="" required
                 class="w-full p-3 m-2 border border-gray-300 rounded-md text-center">
