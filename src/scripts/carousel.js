@@ -18,11 +18,11 @@ function cambiarSlide(n, no) {
 	mostrarSlide(sliderIndex[no] += n, no);
 }
 
-const comenzarImagen = function() {
+function comenzarImagen() {
 	setInterval(cambiarSlide, 2000, 1, 0);
 }
 
-const comenzarOfertas = function() {
+function comenzarOfertas() {
 	setInterval(cambiarSlide, 2000, 1, 1);
 }
 
